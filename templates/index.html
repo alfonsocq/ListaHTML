@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href='static/css/bootstrap.css'>
+</head>
+<body>
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+                
+        <tbody>
+          .{% for usuario in usuarios %}
+            <tr>
+               <th>{{usuario['first_name']}}</th>
+               <th>{{usuario['last_name']}}</th>
+             </tr>
+           {% endfor %}
+        </tbody>
+      </table>
+</body>
+</html>
